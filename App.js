@@ -60,7 +60,7 @@ function ArcoProgreso({ porcentaje, completados, total }) {
       <Svg width={size} height={size / 2 + 20}>
         <Path
           d={pathFondo}
-          stroke="#e8e2f7"
+          stroke="#0f2027"
           strokeWidth={strokeWidth}
           fill="none"
           strokeLinecap="round"
@@ -68,7 +68,7 @@ function ArcoProgreso({ porcentaje, completados, total }) {
         {porcentaje > 0 && (
           <Path
             d={pathProgreso}
-            stroke="#ff7a59"
+            stroke="#f0a020"
             strokeWidth={strokeWidth}
             fill="none"
             strokeLinecap="round"
@@ -309,42 +309,37 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f7f5fb',
+    backgroundColor: '#0f2027',
   },
   header: {
     paddingVertical: 16,
     alignItems: 'center',
   },
   headerTitulo: {
-    color: '#3d2c5c',
+    color: '#fff',
     fontSize: 22,
     fontWeight: 'bold',
   },
   card: {
-    backgroundColor: '#ffffff',
+    backgroundColor: '#1c3b4a',
     marginHorizontal: 16,
-    borderRadius: 20,
+    borderRadius: 16,
     padding: 20,
     alignItems: 'center',
     marginBottom: 16,
-    shadowColor: '#3d2c5c',
-    shadowOpacity: 0.08,
-    shadowRadius: 12,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 2,
   },
   tituloRutina: {
-    color: '#3d2c5c',
+    color: '#fff',
     fontSize: 24,
     fontWeight: 'bold',
   },
   subtitulo: {
-    color: '#9b8fb5',
+    color: '#c7d8e0',
     fontSize: 14,
     marginBottom: 8,
   },
   progresoTexto: {
-    color: '#6b5c8c',
+    color: '#e0e0e0',
     fontSize: 14,
     marginBottom: 4,
   },
@@ -355,12 +350,12 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   arcoNumero: {
-    color: '#3d2c5c',
+    color: '#fff',
     fontSize: 28,
     fontWeight: 'bold',
   },
   arcoLabel: {
-    color: '#9b8fb5',
+    color: '#c7d8e0',
     fontSize: 13,
   },
   lista: {
@@ -371,21 +366,15 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#ffffff',
-    borderRadius: 16,
+    backgroundColor: '#1c3b4a',
+    borderRadius: 12,
     padding: 14,
     marginBottom: 12,
     borderWidth: 2,
     borderColor: 'transparent',
-    shadowColor: '#3d2c5c',
-    shadowOpacity: 0.05,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 2 },
-    elevation: 1,
   },
   itemCompletado: {
-    borderColor: '#ff7a59',
-    backgroundColor: '#fff2ee',
+    borderColor: '#8bc34a',
   },
   itemLeft: {
     flexDirection: 'row',
@@ -397,7 +386,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   nombreHabito: {
-    color: '#3d2c5c',
+    color: '#fff',
     fontSize: 16,
     fontWeight: '500',
     flexShrink: 1,
@@ -407,7 +396,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   racha: {
-    color: '#ff9a3d',
+    color: '#f0a020',
     fontSize: 13,
     marginRight: 10,
   },
@@ -416,34 +405,29 @@ const styles = StyleSheet.create({
     height: 26,
     borderRadius: 13,
     borderWidth: 2,
-    borderColor: '#ff7a59',
+    borderColor: '#8bc34a',
     justifyContent: 'center',
     alignItems: 'center',
   },
   checkboxActivo: {
-    backgroundColor: '#ff7a59',
+    backgroundColor: '#8bc34a',
   },
   check: {
-    color: '#ffffff',
+    color: '#0f2027',
     fontWeight: 'bold',
   },
   resumenCard: {
     flexDirection: 'row',
-    backgroundColor: '#ffffff',
-    borderRadius: 20,
+    backgroundColor: '#1c3b4a',
+    borderRadius: 16,
     padding: 16,
     alignItems: 'center',
     justifyContent: 'space-between',
     marginTop: 4,
     marginBottom: 16,
-    shadowColor: '#3d2c5c',
-    shadowOpacity: 0.06,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 3 },
-    elevation: 1,
   },
   resumenTitulo: {
-    color: '#3d2c5c',
+    color: '#fff',
     fontSize: 15,
     fontWeight: '600',
   },
@@ -458,59 +442,54 @@ const styles = StyleSheet.create({
   barraFondoMini: {
     width: 14,
     height: 44,
-    backgroundColor: '#f0ecf8',
+    backgroundColor: '#0f2027',
     borderRadius: 6,
     justifyContent: 'flex-end',
     overflow: 'hidden',
   },
   barraRellenoMini: {
     width: '100%',
-    backgroundColor: '#ff7a59',
+    backgroundColor: '#8bc34a',
     borderRadius: 6,
   },
   barraLabel: {
-    color: '#9b8fb5',
+    color: '#c7d8e0',
     fontSize: 11,
     marginTop: 4,
   },
   botonAgregar: {
-    backgroundColor: '#ff7a59',
+    backgroundColor: '#8bc34a',
     borderRadius: 30,
     paddingVertical: 16,
     alignItems: 'center',
-    shadowColor: '#ff7a59',
-    shadowOpacity: 0.35,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 3,
   },
   botonAgregarTexto: {
-    color: '#ffffff',
+    color: '#0f2027',
     fontSize: 15,
     fontWeight: 'bold',
   },
   modalFondo: {
     flex: 1,
-    backgroundColor: 'rgba(61,44,92,0.4)',
+    backgroundColor: 'rgba(0,0,0,0.6)',
     justifyContent: 'center',
     alignItems: 'center',
   },
   modalCaja: {
-    backgroundColor: '#ffffff',
-    borderRadius: 20,
+    backgroundColor: '#1c3b4a',
+    borderRadius: 16,
     padding: 20,
     width: '85%',
   },
   modalTitulo: {
-    color: '#3d2c5c',
+    color: '#fff',
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 12,
   },
   modalInput: {
-    backgroundColor: '#f7f5fb',
-    color: '#3d2c5c',
-    borderRadius: 12,
+    backgroundColor: '#0f2027',
+    color: '#fff',
+    borderRadius: 10,
     padding: 12,
     fontSize: 15,
     marginBottom: 16,
@@ -524,18 +503,18 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
   modalBotonCancelarTexto: {
-    color: '#9b8fb5',
+    color: '#c7d8e0',
     fontSize: 15,
   },
   modalBotonGuardar: {
-    backgroundColor: '#ff7a59',
-    borderRadius: 10,
+    backgroundColor: '#8bc34a',
+    borderRadius: 8,
     paddingVertical: 10,
     paddingHorizontal: 16,
     marginLeft: 8,
   },
   modalBotonGuardarTexto: {
-    color: '#ffffff',
+    color: '#0f2027',
     fontSize: 15,
     fontWeight: 'bold',
   },
